@@ -24,4 +24,4 @@ jekyll安装之路开始，参照的是这篇博客:<https://www.cnblogs.com/min
 
 发现了一个表情包网站：[斗图啦](https://www.doutula.com/)
 
-![借来的图](https://github.com/Abamboo/texture/tree/master/_posts/image/1.jpg)
+![借来的图](https://raw.githubusercontent.com/Abamboo/texture/master/_posts/image/1.jpg)
