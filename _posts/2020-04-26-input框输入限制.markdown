@@ -1,0 +1,50 @@
+最近在做web在线系统，前端改的比较多，做一下小总结。   
+控件必填限制
+---
+
+	<input class='form-control' id="id" name="id" placeholder='id'type="text" data-bv-notempty='true' data-bv-notempty-message='id不能为空'/>
+	<input class='form-control' id="id" name="id" placeholder='id'type="text" required data-bv-notempty-message='id不能为空'/>
+
+在js中添加
+
+	$('#remark').attr("required",true);
+	$('#remark').attr("data-bv-notempty-message","id不能为空");
+注：如果使用form表单验证时，不能缺少控件名   name
+
+控件只读显示
+---    
+
+因为使用的是form表单提交数据，所以对input控件使用的是readonly：
+
+	<input class='form-control' placeholder='province' type='text' name='province' id='province'  readonly>
+因为需求需要对select框在特定条件下不可选，readonly对select框不起作用，只能用disabled，在提交之前要解除disabled
+
+	$("#city").attr("disabled",false);
+    $("#county").attr("disabled",false);
+	formdata.city=document.getElementById("city").value;
+    formdata.county=document.getElementById("county").value;
+input框输入限制
+---
+只能输入正负数字和小数点的限制，使用的是正则表达式
+
+	<input class='form-control' placeholder='小数点后保留六位有效数字'onkeyup="value=value.replace(/[^\-?\d.]/g,'')" type='text' name='data' id='data' data-bv-notempty='true' data-bv-notempty-message='data不能为空'>
+
+对于输入位数的限制是在js中实现的
+
+	var z=/^(\-|\+)?\d+(\.\d{6})?$/;
+	var data=$("input[name='data']").val();
+	if(!z.test(data)) {
+			alert("请输入正确格式：保留小数后六位");
+		}
+特殊字符输入的限制，因为要根据输入的内容给文件命名，所以需要对\ / : * ? " < > |特殊字符进行判断
+
+	var remark=$("input[name='remark']").val();
+	var reg = RegExp(/[(\/)(\\)(\:)(\*)(\?)(\")(\<)(\>)(\|)]+/);//缺啥补啥--格式(\要补的特殊字符)
+	if(reg.test(remark))
+	{
+		layer.msg("备注包含非法字符(\\ / : * ? \" < > | ),请检查", {shift: -1, time: 1000});
+		return false;
+	}
+
+
+![每次一图](https://raw.githubusercontent.com/Abamboo/texture/master/_posts/image/0426.gif)
