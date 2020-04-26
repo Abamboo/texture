@@ -1,3 +1,4 @@
+
 最近在做web在线系统，前端改的比较多，做一下小总结。
    
 ### 控件必填限制
@@ -52,4 +53,4 @@
 	}
 
 
-<div align=center>![每次一图](https://raw.githubusercontent.com/Abamboo/texture/master/_posts/image/0426.gif)
+<center><p>![每次一图](https://raw.githubusercontent.com/Abamboo/texture/master/_posts/image/0426.gif)
