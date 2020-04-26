@@ -52,4 +52,4 @@
 	}
 
 
-![每次一图](https://raw.githubusercontent.com/Abamboo/texture/master/_posts/image/0426.gif)
+<div align=center>![每次一图](https://raw.githubusercontent.com/Abamboo/texture/master/_posts/image/0426.gif)
