@@ -53,4 +53,4 @@
 	}
 
 
-<div align=center><img width = '150' height ='150' src ='https://raw.githubusercontent.com/Abamboo/texture/master/_posts/image/0426.gif'/></div>
+<img align=center width = '150' height ='150' src ='https://raw.githubusercontent.com/Abamboo/texture/master/_posts/image/0426.gif'/>
