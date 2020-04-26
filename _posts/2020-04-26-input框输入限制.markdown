@@ -52,5 +52,7 @@
 		return false;
 	}
 
-
-<div align=center><img  src ="https://raw.githubusercontent.com/Abamboo/texture/master/_posts/image/0426.gif"/></div>
+```
+<div align=center>
+<img  src ="https://raw.githubusercontent.com/Abamboo/texture/master/_posts/image/0426.gif"/></div>
+```
