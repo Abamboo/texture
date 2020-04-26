@@ -53,4 +53,4 @@
 	}
 
 
-<center><p>![每次一图](https://raw.githubusercontent.com/Abamboo/texture/master/_posts/image/0426.gif)
+<center><p>![每次一图](https://raw.githubusercontent.com/Abamboo/texture/master/_posts/image/0426.gif)<p><center>
