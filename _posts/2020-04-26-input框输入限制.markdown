@@ -39,16 +39,15 @@ input框输入限制
 	var z=/^(\-|\+)?\d+(\.\d{6})?$/;
 	var data=$("input[name='data']").val();
 	if(!z.test(data)) {
-			alert("请输入正确格式：保留小数后六位");
-		}
+		alert("请输入正确格式：保留小数后六位");
+	}
 
 特殊字符输入的限制，因为要根据输入的内容给文件命名，所以需要对\ / : * ? " < > |特殊字符进行判断
 
 	var remark=$("input[name='remark']").val();
 	var reg = RegExp(/[(\/)(\\)(\:)(\*)(\?)(\")(\<)(\>)(\|)]+/);//缺啥补啥--格式(\要补的特殊字符)
-	if(reg.test(remark))
-	{
-		layer.msg("备注包含非法字符(\\ / : * ? \" < > | ),请检查", {shift: -1, time: 1000});
+	if(reg.test(remark)){
+		alert("备注包含非法字符(\\ / : * ? \" < > | ),请检查", {shift: -1, time: 1000});
 		return false;
 	}
 
