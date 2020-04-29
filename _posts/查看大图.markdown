@@ -1,0 +1,8 @@
+点击查看大图
+---
+
+图片查看需求，想要是实现类似谷歌照片查看的效果，点开为全图缩略，再次点击为原图大小，可以切换，实现的效果：
+
+![效果展示](https://raw.githubusercontent.com/Abamboo/texture/master/_posts/image/0426.gif)
+
+js图片预览：大缩略图点击原图大小，切换
