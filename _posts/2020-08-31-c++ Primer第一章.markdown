@@ -1,0 +1,9 @@
+1.1编译器VSCode，技术文档<https://legacy.gitbook.com/book/jeasonstudio/vscode-cn-doc/details>
+
+1.2改写程序
+
+endl:操纵符的特殊值，结束当前行
+
+1.6 不合法，<<操作符需要一个ostream操作数，代码片段中用;隔开后，<<操作符缺少操作对象
+
+1.7 error:expected primary-expression before '/' token
